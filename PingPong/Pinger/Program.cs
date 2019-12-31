@@ -20,6 +20,7 @@ namespace Pinger
             // and pongs
             .ConfigureLogging(x => x.ClearProviders())
             
+            // Add Jasper to the .Net Core host builder
             .UseJasper<JasperConfig>();
     
     }

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PingPong", "PingPong", "{0A715DE2-3B59-42B0-8708-156C468DC3EB}"
+ProjectSection(SolutionItems) = preProject
+	PingPong\README.md = PingPong\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinger", "PingPong\Pinger\Pinger.csproj", "{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ponger", "PingPong\Ponger\Ponger.csproj", "{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1} = {0A715DE2-3B59-42B0-8708-156C468DC3EB}
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01} = {0A715DE2-3B59-42B0-8708-156C468DC3EB}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Debug|x64.Build.0 = Debug|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Debug|x86.Build.0 = Debug|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Release|x64.ActiveCfg = Release|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Release|x64.Build.0 = Release|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Release|x86.ActiveCfg = Release|Any CPU
+		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Release|x86.Build.0 = Release|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Debug|x64.Build.0 = Debug|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Debug|x86.Build.0 = Debug|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Release|x64.ActiveCfg = Release|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Release|x64.Build.0 = Release|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Release|x86.ActiveCfg = Release|Any CPU
+		{CA6EC545-F275-47E9-AC9D-0F65E6AB8F01}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

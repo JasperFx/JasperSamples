@@ -1,3 +1,4 @@
+using System.Buffers;
 using System.Threading;
 using System.Threading.Tasks;
 using Baseline.Dates;
@@ -6,8 +7,12 @@ using Microsoft.Extensions.Hosting;
 
 namespace Pinger
 {
+    // Just a simple IHostedService object that will publish
+    // a new PingMessage every second
     public class PingerService : IHostedService
     {
+        // IMessagePublisher is an interface you can use
+        // strictly to publish messages through Jasper
         private readonly IMessagePublisher _publisher;
 
         public PingerService(IMessagePublisher publisher)
