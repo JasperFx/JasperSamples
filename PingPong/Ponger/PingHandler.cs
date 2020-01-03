@@ -1,24 +1,26 @@
 using System;
 using System.Threading.Tasks;
 using Jasper;
+using Messages;
 using Oakton;
 
 namespace Ponger
 {
+    // SAMPLE: PingHandler
     public static class PingHandler
     {
         // Simple message handler for the PingMessage message type
         public static Task Handle(
             // The first argument is assumed to be the message type
-            PingMessage message, 
-            
+            PingMessage message,
+
             // Jasper supports method injection similar to ASP.Net Core MVC
             // In this case though, IMessageContext is scoped to the message
             // being handled
             IMessageContext context)
         {
             ConsoleWriter.Write(ConsoleColor.Blue, $"Got ping #{message.Number}");
-            
+
             var response = new PongMessage
             {
                 Number = message.Number
@@ -31,4 +33,5 @@ namespace Ponger
             return context.RespondToSender(response);
         }
     }
+    // ENDSAMPLE
 }
