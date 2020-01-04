@@ -10,19 +10,37 @@ using Microsoft.Extensions.Logging;
 
 namespace InMemoryMediator
 {
+    // SAMPLE: InMemoryMediatorProgram
     public class Program
     {
-        public static void Main(string[] args)
+        // Change the return type to Task<int> to communicate
+        // success/failure codes
+        public static Task<int> Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            return CreateHostBuilder(args)
+
+                // This replaces Build().Start() from the default
+                // dotnet new templates
+                .RunJasper(args);
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .UseJasper()
+
+                // This by itself is enough to add Jasper to an
+                // existing ASP.Net Core system as an in process
+                // mediator library
+                .UseJasper(opts =>
+                {
+                    // configure Jasper if you need to, or this
+                    // Lambda can be omitted entirely if the defaults
+                    // are suitable
+                })
+
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
                 });
     }
+    // ENDSAMPLE
 }
