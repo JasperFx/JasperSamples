@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinger", "PingPongWithRabbi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ponger", "PingPongWithRabbitMQ\Ponger\Ponger.csproj", "{A9A132E5-91DC-4E81-AEEB-43E0BC2F655A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InMemoryMediator", "InMemoryMediator", "{4F802070-AE2E-4D2E-B173-DD9AE5A35A46}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InMemoryMediatorWithEFCoreAndSqlServer", "InMemoryMediatorWithEFCoreAndSqlServer", "{4F802070-AE2E-4D2E-B173-DD9AE5A35A46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemoryMediator", "InMemoryMediator\InMemoryMediator.csproj", "{ABEFE596-C0E6-4FC0-9014-695B17C40DAA}"
 EndProject
