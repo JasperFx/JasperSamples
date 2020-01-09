@@ -25,6 +25,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InMemoryMediatorWithEFCoreA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemoryMediator", "InMemoryMediator\InMemoryMediator.csproj", "{ABEFE596-C0E6-4FC0-9014-695B17C40DAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MediatorWithMarten", "MediatorWithMarten", "{09B23106-6B76-4825-9CD3-BDB6CF441251}"
+ProjectSection(SolutionItems) = preProject
+	Items\UseJasperAsMediatorController.cs = Items\UseJasperAsMediatorController.cs
+	Items\ItemsDbContext.cs = Items\ItemsDbContext.cs
+	Items\ItemHandler.cs = Items\ItemHandler.cs
+	Items\CreateItemCommand.cs = Items\CreateItemCommand.cs
+	Items\Item.cs = Items\Item.cs
+	Items\ItemCreated.cs = Items\ItemCreated.cs
+	Items\DoItAllMyselfItemController.cs = Items\DoItAllMyselfItemController.cs
+	Items\WithResponseController.cs = Items\WithResponseController.cs
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorWithMarten", "MediatorWithMarten\MediatorWithMarten\MediatorWithMarten.csproj", "{2B45DF1F-D199-40E0-B3A7-401636A03DE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +57,7 @@ Global
 		{BEEF9562-2AB8-4CB7-A498-8C223817CD37} = {C2122DC1-A4EF-4D5A-B23C-FC7F7E4DA881}
 		{A9A132E5-91DC-4E81-AEEB-43E0BC2F655A} = {C2122DC1-A4EF-4D5A-B23C-FC7F7E4DA881}
 		{ABEFE596-C0E6-4FC0-9014-695B17C40DAA} = {4F802070-AE2E-4D2E-B173-DD9AE5A35A46}
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6} = {09B23106-6B76-4825-9CD3-BDB6CF441251}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{38EAD71D-60EB-4A01-9A6E-F79CD8C50CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -105,5 +120,17 @@ Global
 		{ABEFE596-C0E6-4FC0-9014-695B17C40DAA}.Release|x64.Build.0 = Release|Any CPU
 		{ABEFE596-C0E6-4FC0-9014-695B17C40DAA}.Release|x86.ActiveCfg = Release|Any CPU
 		{ABEFE596-C0E6-4FC0-9014-695B17C40DAA}.Release|x86.Build.0 = Release|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Debug|x64.Build.0 = Debug|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Debug|x86.Build.0 = Debug|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Release|x64.ActiveCfg = Release|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Release|x64.Build.0 = Release|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Release|x86.ActiveCfg = Release|Any CPU
+		{2B45DF1F-D199-40E0-B3A7-401636A03DE6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
