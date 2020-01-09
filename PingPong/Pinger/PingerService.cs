@@ -3,10 +3,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using Baseline.Dates;
 using Jasper;
+using Messages;
 using Microsoft.Extensions.Hosting;
 
 namespace Pinger
 {
+    // SAMPLE: PingerService
     // Just a simple IHostedService object that will publish
     // a new PingMessage every second
     public class PingerService : IHostedService
@@ -25,7 +27,7 @@ namespace Pinger
             return Task.Run(async () =>
             {
                 var count = 0;
-            
+
                 while (!cancellationToken.IsCancellationRequested)
                 {
                     var message = new PingMessage
@@ -45,4 +47,5 @@ namespace Pinger
             return Task.CompletedTask;
         }
     }
+    // ENDSAMPLE
 }
