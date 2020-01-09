@@ -2,11 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>InMemoryMediator</RootNamespace>
   </PropertyGroup>
 
 
   <ItemGroup>
     <PackageReference Include="Jasper" Version="0.9.17" />
+    <PackageReference Include="Jasper.Persistence.EntityFrameworkCore" Version="0.9.17" />
+    <PackageReference Include="Jasper.Persistence.SqlServer" Version="0.9.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
   </ItemGroup>
 
 </Project>
