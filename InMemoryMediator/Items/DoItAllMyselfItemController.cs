@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InMemoryMediator.Items
 {
+    // SAMPLE: InMemoryMediator-DoItAllMyselfItemController
     // This controller does all the transactional work and business
     // logic all by itself
     public class DoItAllMyselfItemController : ControllerBase
@@ -17,13 +18,13 @@ namespace InMemoryMediator.Items
             _messaging = messaging;
             _db = db;
         }
-        
+
         [HttpPost("/items/create")]
         public async Task Create([FromBody] CreateItemCommand command)
         {
             // Start the "Outbox" transaction
             await _messaging.EnlistInTransaction(_db);
-            
+
             // Create a new Item entity
             var item = new Item
             {
@@ -33,7 +34,7 @@ namespace InMemoryMediator.Items
             // Add the item to the current
             // DbContext unit of work
             _db.Items.Add(item);
-            
+
             // Publish an event to anyone
             // who cares that a new Item has
             // been created
@@ -41,7 +42,7 @@ namespace InMemoryMediator.Items
             {
                 Id = item.Id
             };
-            
+
             // Because the message context is enlisted in an
             // "outbox" transaction, these outgoing messages are
             // held until the ongoing transaction completes
@@ -58,4 +59,5 @@ namespace InMemoryMediator.Items
             await _messaging.SendAllQueuedOutgoingMessages();
         }
     }
+    // ENDSAMPLE
 }
