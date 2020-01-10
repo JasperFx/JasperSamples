@@ -3,12 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InMemoryMediator.Items
 {
+    // SAMPLE: ItemsDbContext
     public class ItemsDbContext : DbContext
     {
         public ItemsDbContext(DbContextOptions<ItemsDbContext> options) : base(options)
         {
         }
-        
+
         public DbSet<Item> Items { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -17,7 +18,7 @@ namespace InMemoryMediator.Items
             // this DbContext type. This enables the EF Core "outbox"
             // support with Jasper
             modelBuilder.MapEnvelopeStorage();
-            
+
             // Your normal EF Core mapping
             modelBuilder.Entity<Item>(map =>
             {
@@ -28,4 +29,5 @@ namespace InMemoryMediator.Items
 
         }
     }
+    // ENDSAMPLE
 }
