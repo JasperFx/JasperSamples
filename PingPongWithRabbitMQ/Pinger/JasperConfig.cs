@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Pinger
 {
+    // SAMPLE: BootstrappingRabbitMQ
     internal class JasperConfig : JasperOptions
     {
         public JasperConfig()
@@ -20,7 +21,7 @@ namespace Pinger
                 .UseForReplies();
 
             Endpoints.PublishAllMessages().ToRabbit("pings");
-            
+
             // Configure Rabbit MQ connections and optionally declare Rabbit MQ
             // objects through an extension method on JasperOptions.Endpoints
             Endpoints.ConfigureRabbitMq(rabbit =>
@@ -28,22 +29,28 @@ namespace Pinger
                 // Using a local installation of Rabbit MQ
                 // via a running Docker image
                 rabbit.ConnectionFactory.HostName = "localhost";
+
+                // This directs Jasper to try to create any
+                // missing Rabbit MQ objects that are declared
+                // in this JasperOptions class
                 rabbit.AutoProvision = true;
+
                 rabbit.DeclareQueue("pongs");
                 rabbit.DeclareQueue("pings");
             });
-            
+
             // You an register additional IoC services
             // directly in the JasperOptions with either
             // Lamar specific registrations or in this case,
             // the built in DI abstractions in .Net Core
-            
+
             // Because Jasper rides on top of the built in
-            // .Net Core generic host, you can use the 
+            // .Net Core generic host, you can use the
             // IHostedService
             Services.AddHostedService<PingerService>();
         }
 
     }
+    // ENDSAMPLE
 
 }
