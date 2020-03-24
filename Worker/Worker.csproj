@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>dotnet-Worker-E1DF7662-92DB-4D4E-9F71-5F177EA86679</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jasper" Version="0.9.17" />
-    <PackageReference Include="Lamar.Diagnostics" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.1" />
+    <PackageReference Include="Jasper" Version="1.0.0" />
+    <PackageReference Include="Lamar.Diagnostics" Version="1.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.3" />
   </ItemGroup>
 </Project>

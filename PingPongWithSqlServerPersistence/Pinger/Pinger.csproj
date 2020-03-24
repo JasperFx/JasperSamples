@@ -6,8 +6,8 @@
     <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Jasper" Version="0.9.17" />
-    <PackageReference Include="Jasper.Persistence.SqlServer" Version="0.9.17" />
+    <PackageReference Include="Jasper" Version="1.0.0" />
+    <PackageReference Include="Jasper.Persistence.SqlServer" Version="1.0.0" />
   </ItemGroup>
     <ItemGroup>
     <None Update="appsettings.json">

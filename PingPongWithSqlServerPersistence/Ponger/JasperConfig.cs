@@ -16,7 +16,7 @@ namespace Ponger
                 .ListenAtPort(2222)
                 
                 // Use message persistence here
-                .Durably();
+                .Durable();
         }
         
         public override void Configure(IHostEnvironment hosting, IConfiguration config)

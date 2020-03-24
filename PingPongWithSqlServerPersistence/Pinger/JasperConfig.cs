@@ -25,7 +25,7 @@ namespace Pinger
                 .ListenAtPort(2223)
                 
                 // Use message persistence at this endpoint
-                .Durably();
+                .Durable();
 
             // You an register additional IoC services
             // directly in the JasperOptions with either

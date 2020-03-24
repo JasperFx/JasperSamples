@@ -23,9 +23,9 @@ namespace Pinger
             // TCP transport on port 2223
             Endpoints
                 .ListenAtPort(2223)
-                
+
                 // Use message persistence at this endpoint
-                .Durably();
+                .Durable();
 
             // You an register additional IoC services
             // directly in the JasperOptions with either
