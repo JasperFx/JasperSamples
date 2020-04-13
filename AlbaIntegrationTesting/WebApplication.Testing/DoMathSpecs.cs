@@ -12,6 +12,9 @@ namespace WebApplication.Testing
         {
         }
 
+        // This specification uses the shorthand helpers in Alba
+        // that's useful when you really only care about the data
+        // going in or out of the HTTP endpoint
         [Fact]
         public async Task do_some_math_adds_and_multiples_shorthand()
         {
@@ -21,6 +24,9 @@ namespace WebApplication.Testing
             answers.Product.ShouldBe(12);
         }
         
+        // This specification shows the longhand way of executing an
+        // Alba scenario and using some of its declarative assertions
+        // about the expected HTTP response
         [Fact]
         public async Task do_some_math_adds_and_multiples_longhand()
         {

@@ -2,6 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.Controllers
 {
+    public class Answers
+    {
+        public int Product { get; set; }
+        public int Sum { get; set; }
+    }
+    
     public class AdditionController : ControllerBase
     {
         [HttpGet("math/{one}/{two}")]
@@ -15,9 +21,5 @@ namespace WebApplication.Controllers
         }
     }
 
-    public class Answers
-    {
-        public int Product { get; set; }
-        public int Sum { get; set; }
-    }
+
 }
