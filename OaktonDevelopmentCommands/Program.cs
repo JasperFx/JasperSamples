@@ -13,6 +13,7 @@ namespace OaktonDevelopmentCommands
 {
     public class Program
     {
+        // I changed the return type to Task<int>
         public static Task<int> Main(string[] args)
         {
             return CreateHostBuilder(args)

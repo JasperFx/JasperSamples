@@ -5,6 +5,8 @@ using System;
 using Oakton;
 using Oakton.AspNetCore;
 
+// This is necessary to tell Oakton
+// to search this assembly for Oakton commands
 [assembly:Oakton.OaktonCommandAssembly]
 
 namespace OaktonDevelopmentCommands
