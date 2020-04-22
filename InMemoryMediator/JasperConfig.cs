@@ -1,5 +1,6 @@
 using InMemoryMediator.Items;
 using Jasper;
+using Jasper.Persistence.EntityFrameworkCore;
 using Jasper.Persistence.EntityFrameworkCore.Codegen;
 using Jasper.Persistence.Sagas;
 using Jasper.Persistence.SqlServer;
@@ -30,6 +31,11 @@ namespace InMemoryMediator
             // Setting up Sql Server-backed message persistence
             // This requires a reference to Jasper.Persistence.SqlServer
             Extensions.PersistMessagesWithSqlServer(connectionString);
+
+            // Set up Entity Framework Core as the support
+            // for Jasper's transactional middleware
+            Extensions.UseEntityFrameworkCorePersistence();
+
 
             // Register the EF Core DbContext
             Services.AddDbContext<ItemsDbContext>(

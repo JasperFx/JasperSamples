@@ -7,9 +7,9 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Jasper" Version="1.1.1" />
-    <PackageReference Include="Jasper.Persistence.EntityFrameworkCore" Version="1.1.1" />
-    <PackageReference Include="Jasper.Persistence.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Jasper" Version="1.1.2" />
+    <PackageReference Include="Jasper.Persistence.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Jasper.Persistence.SqlServer" Version="1.1.2" />
     <PackageReference Include="LamarCodeGeneration.Commands" Version="1.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.2.1" />
