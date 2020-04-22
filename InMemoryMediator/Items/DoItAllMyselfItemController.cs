@@ -19,7 +19,7 @@ namespace InMemoryMediator.Items
             _db = db;
         }
 
-        [HttpPost("/items/create")]
+        [HttpPost("/items/create3")]
         public async Task Create([FromBody] CreateItemCommand command)
         {
             // Start the "Outbox" transaction

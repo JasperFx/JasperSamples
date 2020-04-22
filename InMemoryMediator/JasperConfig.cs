@@ -1,5 +1,7 @@
 using InMemoryMediator.Items;
 using Jasper;
+using Jasper.Persistence.EntityFrameworkCore.Codegen;
+using Jasper.Persistence.Sagas;
 using Jasper.Persistence.SqlServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

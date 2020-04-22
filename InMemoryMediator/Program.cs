@@ -26,15 +26,10 @@ namespace InMemoryMediator
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
 
-                // This by itself is enough to add Jasper to an
-                // existing ASP.Net Core system as an in process
-                // mediator library
-                .UseJasper(opts =>
-                {
-                    // configure Jasper if you need to, or this
-                    // Lambda can be omitted entirely if the defaults
-                    // are suitable
-                })
+                // You can do the Jasper configuration inline with a 
+                // Lambda, but here I've centralized the Jasper
+                // configuration into a separate class
+                .UseJasper<JasperConfig>()
 
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

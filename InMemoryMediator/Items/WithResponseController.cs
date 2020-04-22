@@ -14,7 +14,7 @@ namespace InMemoryMediator.Items
             _bus = bus;
         }
 
-        [HttpPost("/items/create")]
+        [HttpPost("/items/create2")]
         public Task<ItemCreated> Create([FromBody] CreateItemCommand command)
         {
             // Using Jasper as a Mediator, and receive the
