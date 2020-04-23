@@ -14,6 +14,9 @@ namespace InMemoryMediator.Items
             _bus = bus;
         }
 
+        // MVC Core calls this method, and uses the signature
+        // and attributes like the [FromBody] to "know" how
+        // to call this code at runtime
         [HttpPost("/items/create2")]
         public Task<ItemCreated> Create([FromBody] CreateItemCommand command)
         {
@@ -23,4 +26,12 @@ namespace InMemoryMediator.Items
         }
     }
     // ENDSAMPLE
+
+
+
+
+
+
+
+
 }
