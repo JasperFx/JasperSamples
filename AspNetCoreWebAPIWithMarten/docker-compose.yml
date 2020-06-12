@@ -1,0 +1,6 @@
+version: '3'
+services:
+  postgresql:
+    image: "clkao/postgres-plv8:latest"
+    ports:
+     - "5433:5432"
