@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InMemoryMediator.Items
 {
-    // SAMPLE: ItemsDbContext
+    #region sample_ItemsDbContext
     public class ItemsDbContext : DbContext
     {
         public ItemsDbContext(DbContextOptions<ItemsDbContext> options) : base(options)
@@ -29,5 +29,5 @@ namespace InMemoryMediator.Items
 
         }
     }
-    // ENDSAMPLE
+    #endregion
 }

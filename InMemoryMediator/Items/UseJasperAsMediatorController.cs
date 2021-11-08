@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InMemoryMediator.Items
 {
-    // SAMPLE: InMemoryMediator-UseJasperAsMediatorController
+    #region sample_InMemoryMediator_UseJasperAsMediatorController
     public class UseJasperAsMediatorController : ControllerBase
     {
         private readonly ICommandBus _bus;
@@ -21,7 +21,7 @@ namespace InMemoryMediator.Items
             return _bus.Invoke(command);
         }
     }
-    // ENDSAMPLE
+    #endregion
 
 
 }

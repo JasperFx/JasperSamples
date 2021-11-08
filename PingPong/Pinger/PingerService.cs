@@ -8,7 +8,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace Pinger
 {
-    // SAMPLE: PingerService
+    #region sample_PingerService
     // Just a simple IHostedService object that will publish
     // a new PingMessage every second
     public class PingerService : IHostedService
@@ -47,5 +47,5 @@ namespace Pinger
             return Task.CompletedTask;
         }
     }
-    // ENDSAMPLE
+    #endregion
 }

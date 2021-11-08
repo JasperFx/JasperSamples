@@ -4,7 +4,7 @@ using Oakton;
 
 namespace Pinger
 {
-    // SAMPLE: PongHandler
+    #region sample_PongHandler
     // Simple message handler for the PongMessage responses
     // The "Handler" suffix is important as a naming convention
     // to let Jasper know that it should build a message handling
@@ -18,5 +18,5 @@ namespace Pinger
             ConsoleWriter.Write(ConsoleColor.Blue, $"Got pong #{message.Number}");
         }
     }
-    // ENDSAMPLE
+    #endregion
 }

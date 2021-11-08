@@ -1,7 +1,7 @@
 
 namespace Messages
 {
-    // SAMPLE: PingAndPongMessages
+    #region sample_PingAndPongMessages
     public class PingMessage
     {
         public int Number { get; set; }
@@ -11,5 +11,5 @@ namespace Messages
     {
         public int Number { get; set; }
     }
-    // ENDSAMPLE
+    #endregion
 }

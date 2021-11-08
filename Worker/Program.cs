@@ -8,7 +8,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace Worker
 {
-    // SAMPLE: SimpleJasperWorker
+    #region sample_SimpleJasperWorker
     public class Program
     {
         // The Jasper-ified version
@@ -31,7 +31,7 @@ namespace Worker
                     services.AddHostedService<Worker>();
                 });
     }
-    // ENDSAMPLE
+    #endregion
 
 
 

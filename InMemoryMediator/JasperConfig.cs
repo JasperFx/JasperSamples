@@ -11,7 +11,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace InMemoryMediator
 {
-    // SAMPLE: InMemoryMediator-JasperConfig
+    #region sample_InMemoryMediator_JasperConfig
     public class JasperConfig : JasperOptions
     {
         public override void Configure(IHostEnvironment hosting, IConfiguration config)
@@ -48,6 +48,6 @@ namespace InMemoryMediator
                 optionsLifetime:ServiceLifetime.Singleton);
         }
     }
-    // ENDSAMPLE
+    #endregion
 
 }

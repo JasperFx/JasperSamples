@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace InMemoryMediator
 {
-    // SAMPLE: InMemoryMediatorProgram
+    #region sample_InMemoryMediatorProgram
     public class Program
     {
         // Change the return type to Task<int> to communicate
@@ -36,5 +36,5 @@ namespace InMemoryMediator
                     webBuilder.UseStartup<Startup>();
                 });
     }
-    // ENDSAMPLE
+    #endregion
 }

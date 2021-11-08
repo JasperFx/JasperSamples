@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InMemoryMediator.Items
 {
-    // SAMPLE: InMemoryMediator-DoItAllMyselfItemController
+    #region sample_InMemoryMediator_DoItAllMyselfItemController
     // This controller does all the transactional work and business
     // logic all by itself
     public class DoItAllMyselfItemController : ControllerBase
@@ -59,5 +59,5 @@ namespace InMemoryMediator.Items
             await _messaging.SendAllQueuedOutgoingMessages();
         }
     }
-    // ENDSAMPLE
+    #endregion
 }

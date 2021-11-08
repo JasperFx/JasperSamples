@@ -6,7 +6,7 @@ using Oakton;
 
 namespace Ponger
 {
-    // SAMPLE: PingHandler
+    #region sample_PingHandler
     public static class PingHandler
     {
         // Simple message handler for the PingMessage message type
@@ -33,5 +33,5 @@ namespace Ponger
             return context.RespondToSender(response);
         }
     }
-    // ENDSAMPLE
+    #endregion
 }

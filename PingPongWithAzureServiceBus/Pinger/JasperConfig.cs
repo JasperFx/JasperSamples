@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace Pinger
 {
-    // SAMPLE: JasperConfigForAzureServiceBus
+    #region sample_JasperConfigForAzureServiceBus
     internal class JasperConfig : JasperOptions
     {
         public JasperConfig()
@@ -26,6 +26,6 @@ namespace Pinger
             Services.AddHostedService<PingerService>();
         }
     }
-    // ENDSAMPLE
+    #endregion
 
 }

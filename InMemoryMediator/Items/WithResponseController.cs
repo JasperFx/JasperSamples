@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InMemoryMediator.Items
 {
-    // SAMPLE: InMemoryMediator-WithResponseController
+    #region sample_InMemoryMediator_WithResponseController
     public class WithResponseController : ControllerBase
     {
         private readonly ICommandBus _bus;
@@ -25,7 +25,7 @@ namespace InMemoryMediator.Items
             return _bus.Invoke<ItemCreated>(command);
         }
     }
-    // ENDSAMPLE
+    #endregion
 
 
 

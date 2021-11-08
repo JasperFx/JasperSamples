@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Pinger
 {
-    // SAMPLE: BootstrappingRabbitMQ
+    #region sample_BootstrappingRabbitMQ
     internal class JasperConfig : JasperOptions
     {
         public JasperConfig()
@@ -51,6 +51,6 @@ namespace Pinger
         }
 
     }
-    // ENDSAMPLE
+    #endregion
 
 }

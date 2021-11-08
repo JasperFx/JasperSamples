@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace Ponger
 {
-    // SAMPLE: PongerJasperConfig
+    #region sample_PongerJasperConfig
     internal class JasperConfig : JasperOptions
     {
         public JasperConfig()
@@ -15,6 +15,6 @@ namespace Ponger
             Endpoints.ListenAtPort(2222);
         }
     }
-    // ENDSAMPLE
+    #endregion
 
 }
