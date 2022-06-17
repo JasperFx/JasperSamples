@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinger", "Pinger\Pinger.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ponger", "Ponger\Ponger.csproj", "{C4064504-49E1-4736-BD2E-2D5C50559519}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{C4064504-49E1-4736-BD2E-2D5C50559519}.Release|x64.Build.0 = Release|Any CPU
 		{C4064504-49E1-4736-BD2E-2D5C50559519}.Release|x86.ActiveCfg = Release|Any CPU
 		{C4064504-49E1-4736-BD2E-2D5C50559519}.Release|x86.Build.0 = Release|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Debug|x64.Build.0 = Debug|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Debug|x86.Build.0 = Debug|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Release|x64.Build.0 = Release|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{0BC270CB-4381-4C38-B8AD-DD2E4E1BA2EA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
